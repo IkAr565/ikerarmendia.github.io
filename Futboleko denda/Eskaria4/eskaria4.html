@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+    <title>Eskaria4</title>
+    <link rel="stylesheet" href="css/eskaria4.css">
+</head>
+<body>
+    <header>
+        <img src="img/logoa.jpg" alt="Logoa">
+        <h1>Denda</h1>
+        <a href="../Saskia/saskia.html">Saskia</a>
+	</header>
+    <nav>
+        <ul>
+           <li><a href="../Hasierako web-orria/index.html">Hasiera</a></li>
+           <li><a href="../Katalogoa/katalogoa.html">Katalogoa</a></li>
+           <li><a href="../Kontaktua/kontaktua.html">Kontaktua</a></li>
+      	</ul>
+    </nav>
+    
+    <main>
+        <h2>Eskaria</h2>
+        <hr>
+        <h3>Kreditu-txartelaren datuak</h3>
+       <form action="">
+            <label for="mota">Mota:</label>
+            <select name="mota" id="mota">
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="amex">American Express</option>
+            </select><br><br>
+            
+            <label for="titularra">Titularra:</label>
+            <input type="number" id="titularra" name="titularra" required><br><br>
+            
+            <label for="zenbakia">Zenbakia:</label>
+            <input type="number" id="zenbakia" name="zenbakia" required><br><br>
+            
+            <label for="data">Iraungitze-data (hh/uu):</label>
+            <select name="hilea" id="data">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select name="urtea" id="data">
+                <option value="23">2023</option>
+                <option value="24">2024</option>
+                <option value="25">2025</option>
+                <option value="26">2026</option>
+                <option value="27">2027</option>
+                <option value="28">2028</option>
+                <option value="29">2029</option>
+                <option value="30">2030</option>
+            </select><br><br>
+            
+            <label for="cvc">CVC:</label>
+            <input type="number" id="cvc" name="cvc" max="999" required>
+        </form>
+        <a href="../Eskaria5/eskaria5.html"><button>Hurrengoa</button></a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Lea Artibai Ikastetxea</p>
+    </footer>
+</body>
+</html>

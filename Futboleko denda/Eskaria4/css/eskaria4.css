@@ -1,0 +1,107 @@
+* { padding: 0; margin: 0; }
+
+body {
+	border: 1px solid black;
+	position: relative;
+	margin: auto 4%;
+	font-family: "Lucida Sans", sans-serif;
+	font-size: 17px;
+}
+
+header {
+	margin: 1.4191106906338694418164616840114%;
+	padding: 1.4191106906338694418164616840114%;
+	margin-bottom: 0px;
+	position: relative;
+	display: flex;
+	background-color: rgb(238, 238, 238);
+	border-radius: 20px;
+}
+header img {
+	width: 120px;
+}
+header h1 {
+	margin-left: 15px;
+	position: absolute;
+	left: 145px;
+}
+header a {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	border: 1px solid black;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: black;
+	border-radius: 10px;
+}
+
+nav {
+	margin: 1.4191106906338694418164616840114%;
+	padding: 1.4191106906338694418164616840114%;
+	background-color: rgb(238, 238, 238);
+	border-radius: 20px;
+}
+nav ul li {
+	display: inline-block;
+	margin-right: 10px;
+}
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+
+main {
+	margin: 1.4191106906338694418164616840114%;
+	padding: 1.4191106906338694418164616840114%;
+	background-color: rgb(238, 238, 238);
+	border-radius: 20px;
+}
+main h1, main h2, main h3, main p, main hr {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+main button {
+	padding: 10px 20px;
+	border: none;
+	background-color: black;
+	color: white;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+form {
+  max-width: 300px;
+  padding: 15px 15px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+form input {
+  float: right;
+}
+
+form select {
+  float: right;
+  margin-right: 5px;
+}
+
+#mota {
+  width: 100px;
+}
+#cvc {
+  width: 60px;
+}
+
+footer {
+	clear: both;
+	margin: 1.4191106906338694418164616840114%;
+	padding: 1.4191106906338694418164616840114%;
+	background-color: rgb(238, 238, 238);
+	border-radius: 20px;
+}

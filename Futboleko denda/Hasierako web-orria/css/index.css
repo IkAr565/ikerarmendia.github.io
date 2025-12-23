@@ -1,0 +1,207 @@
+* { padding: 0; margin: 0; }
+
+body {
+	border: 1px solid black;
+	position: relative;
+	margin: auto 4%;
+	font-family: "Lucida Sans", sans-serif;
+	font-size: 17px;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+	'nav'
+    'main'
+    'footer';
+  background-color: white;  
+}
+
+header {
+	grid-area: header;
+	margin: 1.4191106906338694418164616840114%;
+	padding: 1.4191106906338694418164616840114%;
+	margin-bottom: 0px;
+	position: relative;
+	display: flex;
+	background-color: rgb(238, 238, 238);
+	border-radius: 20px;
+}
+header img {
+	width: 120px;
+}
+header h1 {
+	margin-left: 15px;
+	position: absolute;
+	left: 145px;
+}
+header a {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	border: 1px solid black;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: black;
+	border-radius: 10px;
+}
+
+nav {
+	grid-area: nav;
+	margin: 1.4191106906338694418164616840114%;
+	padding: 1.4191106906338694418164616840114%;
+	margin-bottom: 0px;
+	background-color: rgb(238, 238, 238);
+	border-radius: 20px;
+}
+nav ul li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+
+main {
+	display: grid;
+	grid-template-areas:
+    'menu'
+	'content'
+    'facts';
+	column-gap: 50px;
+	margin: 1.4191106906338694418164616840114%;
+	padding: 1.4191106906338694418164616840114%;
+	margin-bottom: 0px;
+	background-color: rgb(238, 238, 238);
+	border-radius: 20px;
+}
+main h1, main h2, main h3, main p, main hr {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.eskaintzak section, .nobedadeak section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.eskaintza1, .eskaintza2, .eskaintza3, .eskaintza4, .eskaintza5, .eskaintza6, .eskaintza7, .eskaintza8, .eskaintza9, .eskaintza10, .nobedadea1, .nobedadea2, .nobedadea3, .nobedadea4, .nobedadea5, .nobedadea6, .nobedadea7, .nobedadea8, .nobedadea9, .nobedadea10 {
+	padding: 1.4191106906338694418164616840114%;
+	width: 25%;
+	margin-bottom: 20px;
+	border: 1px solid black;
+	border-radius: 40px;
+	overflow: hidden;
+	background-color: rgb(255, 255, 255);
+}
+
+main section div img {
+    max-width: 100%;
+	border-radius: 30px;
+}
+
+.menu {
+	grid-area: menu;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #bdbdbd;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.menu li:hover {
+  background-color: #a1a1a1;
+}
+
+
+.content {
+	grid-area: content;
+}
+
+.facts {
+  grid-area: facts;
+  background-color: #bdbdbd;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.facts > h2 {
+  font-size: 20px;
+}
+
+.facts li {
+  margin-bottom: 5px;
+}
+
+footer {
+	grid-area: footer;
+	margin: 1.4191106906338694418164616840114%;
+	padding: 1.4191106906338694418164616840114%;
+	background-color: rgb(238, 238, 238);
+	border-radius: 20px;;
+	clear: left;
+}
+
+/*@media (min-width: 600px) {
+  header {grid-area: 1 / span 4;}
+  nav {grid-area: 2 / span 4;}
+  main {grid-area: 3 / span 4;}
+  .menu {grid-area: 3 / span 1;}
+  .content {grid-area: 3 / span 3;}
+  .facts {grid-area: 4 / span 4;}
+  footer {grid-area: 5 / span 4;}
+}*/
+
+/*@media (min-width: 768px) {
+  header {grid-area: 1 / span 4;}
+  nav {grid-area: 2 / span 4;}
+  main {grid-area: 3 / span 4;}
+  .menu {grid-area: 3 / span 1;}
+  .content {grid-area: 3 / span 2;}
+  .facts {grid-area: 3 / span 1;}
+  footer {grid-area: 4 / span 4;}
+}*/
+
+@media (min-width: 600px) {
+.grid-container{
+	  grid-template-areas:
+	'header header header'
+	'nav nav nav'
+	'main main main'
+	'footer footer footer';
+}
+  main {
+	grid-template-columns: 23.076923076923076923076923076923% auto;
+	grid-template-areas:
+	  'menu content'
+	  'facts facts';
+  }
+}
+
+@media (min-width: 768px) {
+.grid-container{
+	  grid-template-areas:
+	'header header header'
+	'nav nav nav'
+	'main main main'
+	'footer footer footer';
+}
+  main {
+	grid-template-columns: 22.925724337061498124854800703594% 45.851448674122996249709601407189% auto;
+	grid-template-areas:
+	  'menu content facts';
+  }
+}
